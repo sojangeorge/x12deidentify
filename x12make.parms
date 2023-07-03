@@ -1,0 +1,34 @@
+
+[logging]
+logfile = D:\Tools\Python\Jobaids\x12make\x12make.log
+
+[testbed]
+dbfile = D:\Tools\Python\Jobaids\x12make\data\testbed1.db
+db_commitinterval = 250
+DELETE_EXISTING = yes
+loadMember = yes
+loadBillingSupplier = yes
+loadProviders = yes
+member_file = D:\Tools\Python\Jobaids\x12make\data\UHC_members_testbed.csv
+supplier_file = D:\Tools\Python\Jobaids\x12make\data\UHC_vendors_testbed.csv
+provider_file = D:\Tools\Python\Jobaids\x12make\data\UHC_providers_testbed.csv
+
+[x12attributes]
+InterchangeSenderID = SENDER1
+InterchangeReceiverID = RECEIVER1
+RepetitionSeparator = ^
+InterchangeUsageIndicator = T
+ComponentElementSeparator = |
+GSFunctionalIdentifierCode = HC
+x12version = 005010X222
+
+[1000Aattributes]
+SubmitterOrganizationName = ABCHEALTH
+SubmitterContactName = x12 MAKER
+SubmitterContactTelephone = 8001112222
+SubmitterContactEmail = no-reply@x12maker.com
+SubmitterETIN = SENDER1
+
+[1000Battributes]
+ReceiverName = XYZHEALTH
+ReceiverETIN = RECEIVER1
